@@ -1,0 +1,297 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarBackgroundColor": "#0175FE",
+				"enablePullDownRefresh": true,
+				"navigationBarTextStyle": "white",
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		{
+			"path": "pages/index/game/gameList",
+			"style": {
+				"navigationBarTitleText": "护理员",
+				"enablePullDownRefresh": true
+
+			}
+		},
+		{
+			"path": "pages/index/game/orderDet",
+			"style": {
+				"navigationBarTitleText": "填写订单",
+				"enablePullDownRefresh": true
+			}
+		},
+
+		{
+			"path": "pages/index/citys/citys",
+			"style": {
+				"navigationBarTitleText": "城市"
+			}
+		},
+
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#e1edff",
+				// #ifdef h5
+				"navigationStyle": "custom",
+				// #endif 
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+
+		{
+			"path": "pages/public/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/public/bind",
+			"style": {
+				"navigationBarTitleText": "绑定手机号"
+			}
+		},
+		{
+			"path": "pages/public/forgetPwd",
+			"style": {
+				"navigationBarTitleText": "重置密码"
+			}
+		},
+
+		{
+			"path": "pages/public/loginphone",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/public/pwd",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/public/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		}, {
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				// #ifdef h5
+				"navigationStyle": "custom",
+				// #endif 
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/peizhenPeop/peizhenPeop",
+			"style": {
+				"navigationBarTitleText": "陪诊师",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"subPackages": [{
+		"root": "my",
+		"pages": [{
+				"path": "keshi/index",
+				"style": {
+					"navigationBarTitleText": "全部科室"
+				}
+			},
+			{
+				"path": "order/pay",
+				"style": {
+					"navigationBarTitleText": "订单详情"
+				}
+			},
+			{
+				"path": "other/car",
+				"style": {
+					"navigationBarTitleText": "就诊人",
+					"enablePullDownRefresh": true
+				}
+			}, {
+				"path": "other/addCar",
+				"style": {
+					"navigationBarTitleText": "添加就诊人信息"
+				}
+			}, {
+				"path": "peizhen/peizhen",
+				"style": {
+					"navigationBarTitleText": "就医陪诊",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "yxpeizhen/yxpeizhen",
+				"style": {
+					"navigationBarTitleText": "码兄陪诊",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "ynpeihu/ynpeihu",
+				"style": {
+					"navigationBarTitleText": "院内陪护",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "peihu/order",
+				"style": {
+					"navigationBarTitleText": "填写订单",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "yxpeizhen/info",
+				"style": {
+					"navigationBarTitleText": "码兄陪诊",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "hospital/hospital",
+				"style": {
+					"navigationBarTitleText": "医院详情",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "xieyi/xieyi",
+				"style": {
+					"navigationBarTitleText": "服务条款同意书",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "address/address",
+				"style": {
+					"navigationBarTitleText": "地址管理",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "address/Endaddress",
+				"style": {
+					"navigationBarTitleText": "添加地址",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "city/city",
+				"style": {
+					"navigationBarTitleText": "服务城市",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "peizhenPeople/peizhenPeople",
+				"style": {
+					"navigationBarTitleText": "陪诊员",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "introduction/introduction",
+				"style": {
+					"navigationBarTitleText": "师傅介绍",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#468EF8",
+					"navigationBarTextStyle": "white"
+				}
+
+			},
+			{
+				"path": "customServer/customServer",
+				"style": {
+					"navigationBarTitleText": "服务",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "customServer/customPz",
+				"style": {
+					"navigationBarTitleText": "填写订单",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "customServer/customPeop",
+				"style": {
+					"navigationBarTitleText": "护理员",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "customServer/customRem",
+				"style": {
+					"navigationBarTitleText": "师傅介绍",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#468EF8",
+					"navigationBarTextStyle": "white"
+				}
+			},
+			{
+				"path": "customServer/customPeihu",
+				"style": {
+					"navigationBarTitleText": "填写订单",
+					"enablePullDownRefresh": false
+				}
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "陪诊",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#557EFD",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/index_.png",
+				"selectedIconPath": "static/tabbar/index.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/peizhenPeop/peizhenPeop",
+				"iconPath": "static/tabbar/peoples_.png",
+				"selectedIconPath": "static/tabbar/peoples.png",
+				"text": "陪诊师"
+			},
+			{
+				"pagePath": "pages/order/index",
+				"iconPath": "static/tabbar/order_.png",
+				"selectedIconPath": "static/tabbar/order.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"iconPath": "static/tabbar/my_.png",
+				"selectedIconPath": "static/tabbar/my.png",
+				"text": "我的"
+			}
+		]
+	}
+}
